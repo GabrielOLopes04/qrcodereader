@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manutencao"
+    android:background="@color/azul_claro"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtManutencao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manutenção"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/rosa"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="ID" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nome" />
+
+        <EditText
+            android:id="@+id/edtCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="CPF"/>
+
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Telefone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_pink"
+            android:textColor="@color/white"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAtualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atualizar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_pink"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            />
+
+        <!-- O botão listar agora está acima do botão excluir -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_pink"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_pink"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_pink"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_pink"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            />
+
+        <!-- EditText para exibir a lista de alunos -->
+        <EditText
+            android:id="@+id/edtListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Lista de Alunos"
+            android:gravity="top"
+            android:editable="false"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
